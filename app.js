@@ -1,6 +1,8 @@
 import express from 'express';
+import router from './route.js';
 const app = express();
+app.use(router);
 
 app.listen(8080, () => {
-  console.log(`Server is listening on PORT 8080`);
+  console.log(`📌 Our Server is listening on PORT 8080`);
 });
