@@ -1,0 +1,32 @@
+.form-container {
+  border-radius: 30px;
+  margin-top: 150px;
+  display: inline-block;
+  position: relative;
+  left: 480px;
+  background-color: powderblue;
+  padding: 25px;
+}
+form {
+  text-align: center;
+}
+input {
+  margin: 13px;
+  border: none;
+  height: 1.5rem;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: rgba(255, 0, 0, 0.514);
+}
+input[type='submit'] {
+  padding: 0 15px;
+  background-color: salmon;
+  color: white;
+  height: 28px;
+  width: 80px;
+}
