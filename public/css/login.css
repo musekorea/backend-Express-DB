@@ -7,6 +7,7 @@
   background-color: powderblue;
   padding: 25px;
 }
+
 form {
   text-align: center;
 }
@@ -29,4 +30,30 @@ input[type='submit'] {
   color: white;
   height: 28px;
   width: 80px;
+  transition: all 0.2s ease-in-out;
+}
+input[type='submit']:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+.asyncSend {
+  background-color: rgba(66, 189, 35, 0.582);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  left: 532px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  font-size: 20px;
+  transition: color 0.2s ease-in-out;
+}
+.asyncSend:hover {
+  color: cornflowerblue;
+  padding: 9px 19px;
+  cursor: pointer;
+}
+.active {
+  display: none;
 }

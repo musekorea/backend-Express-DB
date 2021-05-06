@@ -18,4 +18,9 @@ router.post('/login', (req, res) => {
     path: req.path,
   });
 });
+
+router.post('/async', (req, res) => {
+  console.log(req.body);
+  res.json({ message: 'I got a fetch DATA', id: req.body.id });
+});
 export default router;

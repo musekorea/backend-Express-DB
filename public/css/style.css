@@ -6,9 +6,7 @@
 a {
   text-decoration: none;
 }
-body {
-  /*첫번째 해결방법 padding-top:60px 주기 */
-}
+
 .wrap {
   width: 1200px;
   height: 600px;
@@ -83,7 +81,6 @@ main {
   height: 500px;
   position: relative;
   top: 65px;
-  /* z-index: -1;  */
 }
 .logoImg {
   margin-top: 10px;
