@@ -43,7 +43,7 @@ input[type='submit']:hover {
   border: none;
   border-radius: 20px;
   position: relative;
-  left: 532px;
+  left: 505px;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 600;
   font-size: 20px;
@@ -56,4 +56,11 @@ input[type='submit']:hover {
 }
 .active {
   display: none;
+}
+.ajaxText {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  bottom: 40px;
+  left: 190px;
 }

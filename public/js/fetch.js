@@ -27,5 +27,5 @@ function ajaxTest(fetchResData) {
   const form = document.querySelector('.form-container');
   const ajaxText = document.querySelector('.ajaxText');
   //form.classList.add('active');
-  ajaxText.innerHTML = `${fetchResData.message} from ${fetchResData.id}`;
+  ajaxText.innerHTML = `${fetchResData.message}`;
 }

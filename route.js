@@ -1,4 +1,6 @@
 import express from 'express';
+import connection from './db';
+
 const router = express.Router();
 
 router.get('/', (req, res) => {
@@ -20,7 +22,17 @@ router.post('/login', (req, res) => {
 });
 
 router.post('/async', (req, res) => {
-  console.log(req.body);
-  res.json({ message: 'I got a fetch DATA', id: req.body.id });
+  const inputID = req.body.id;
+  const dbID = connection.query('select * from user', (error, rows, fields) => {
+    if (error) throw error;
+    if (inputID === rows[0].email) {
+      console.log(`Your id is exist`);
+      res.json({
+        message: `${inputID} is exist in our DB`,
+        id: rows[0].email,
+      });
+    }
+  });
 });
+
 export default router;
