@@ -43,7 +43,7 @@ input[type='submit']:hover {
   border: none;
   border-radius: 20px;
   position: relative;
-  left: 505px;
+  left: 487px;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 600;
   font-size: 20px;
@@ -63,4 +63,10 @@ input[type='submit']:hover {
   position: relative;
   bottom: 40px;
   left: 190px;
+}
+h1 {
+  text-align: center;
+  position: relative;
+  top: 100px;
+  color: rgba(0, 0, 0, 0.7);
 }

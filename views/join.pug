@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
     <script defer src="../js/index.js"></script>
-    <title>Log In</title>
+    script(defer src="../js/fetch.js")
+    <title>JOIN</title>
   </head>
   <body>
     <div class="wrap">
@@ -24,14 +25,18 @@
           <a href="/join">JOIN</a>
         </div>
       </header>
-      main
-        br
-        h1 Hello🐱‍👤 #{data}
-        P This is Welcome Page made by Pug Template!
-        P And This page's path is #{path}
+      <main>
+        h1 JOIN OUR WEBSITE
+        <br />
+        <div class="form-container">
+          <form action="/join" method="post">
+            <input class="email" type="text" name="email" placeholder="E-MAIL" /><br />
+            <input class="password" type="passoword" name="password" placeholder="PASSWORD" /><br />
+            <input type="submit" value="JOIN" />
+          </form>
+        </div>
+      </main>
       <footer>www.codeAcademy.com</footer>
     </div>
   </body>
 </html>
-
-

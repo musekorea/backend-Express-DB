@@ -48,12 +48,12 @@ header {
   color: royalblue;
   font-weight: bold;
   margin-left: 60px;
-  width: 700px;
+  width: 600px;
   text-align: center;
 }
 .header-nav-box {
   display: inline-block;
-  margin: 0 80px;
+  margin: 0 60px;
 }
 .login {
   display: inline-block;
@@ -75,6 +75,27 @@ header {
 }
 .login a:hover {
   color: white;
+  transition: all 0.3s ease-in-out;
+}
+.join {
+  display: inline-block;
+  background-color: mistyrose;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+.join a {
+  color: chocolate;
+}
+.join:hover {
+  transition: all 0.3s ease-in-out;
+  padding: 5px 14px;
+  background-color: lemonchiffon;
+  cursor: pointer;
+}
+.join a:hover {
+  color: lightskyblue;
   transition: all 0.3s ease-in-out;
 }
 main {
