@@ -1,5 +1,5 @@
 const asyncBtn = document.querySelector('.asyncSend');
-const idData = document.querySelector('.id');
+const idData = document.querySelector('.email');
 const passData = document.querySelector('.password');
 const postData = {
   id: idData.value,
@@ -26,6 +26,5 @@ async function sendData(e) {
 function ajaxTest(fetchResData) {
   const form = document.querySelector('.form-container');
   const ajaxText = document.querySelector('.ajaxText');
-  //form.classList.add('active');
   ajaxText.innerHTML = `${fetchResData.message}`;
 }

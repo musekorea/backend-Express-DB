@@ -1,0 +1,17 @@
+.dbData {
+  border: 1px solid black;
+  column-count: 3;
+  column-rule: 1px dashed red;
+  column-gap: 30px;
+}
+#check {
+  background-color: black;
+  width: 200px;
+}
+#joinP {
+  font-size: 20px;
+  color: lightseagreen;
+}
+.editSpan {
+  color: rgba(0, 0, 0, 0.5);
+}

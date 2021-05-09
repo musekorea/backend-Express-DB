@@ -64,7 +64,7 @@ input[type='submit']:hover {
   bottom: 40px;
   left: 190px;
 }
-h1 {
+.joinH1 {
   text-align: center;
   position: relative;
   top: 100px;

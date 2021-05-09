@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
     <script defer src="../js/index.js"></script>
-    <title>Log In</title>
+    script(defer src="../js/checkDb.js")
+    <title>Welcome Join</title>
   </head>
   <body>
     <div class="wrap">
@@ -26,9 +27,11 @@
       </header>
       main
         br
-        h1 Hello🐱‍👤 #{data}
-        P This is Welcome Page made by Pug Template!
-        P And This page's path is #{path}
+        h1 Thank you for your joining 🐱‍👤 #{email}
+        P(id="joinP") You are our #{id} Client!
+        .dbData           
+        form(action="/edit", method="post")
+        input(type="submit" value="CHECK DB" id="check")
       <footer>www.codeAcademy.com</footer>
     </div>
   </body>

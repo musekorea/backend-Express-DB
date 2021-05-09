@@ -5,8 +5,8 @@ export const loginGetController = (req, res) => {
 
 export const loginPostController = (req, res) => {
   console.log(req.path, req.method, req.body);
-  res.render('welcome.pug', {
-    data: req.body.id,
+  res.render('welcome-login.pug', {
+    data: req.body.email,
     path: req.path,
   });
 };
