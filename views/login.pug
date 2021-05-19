@@ -28,8 +28,9 @@
       <main>
         <br />
         <div class="form-container">
+          span #{flashMSG.error} 
           <form action="/login" method="post">
-            <input class="email" type="text" name="email" placeholder="E-MAIL" /><br />
+            <input class="email" type="text" name="username" placeholder="E-MAIL" /><br />
             <input class="password" type="passoword" name="password" placeholder="PASSWORD" /><br />
             <input type="submit" value="LOGIN" />
           </form>
@@ -38,6 +39,7 @@
       </main>
       button(class="asyncSend") Does my Email exist?
       span(class="ajaxText")
+      
       <footer>www.codeAcademy.com</footer>
     </div>
   </body>

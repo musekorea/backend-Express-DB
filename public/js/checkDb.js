@@ -16,12 +16,12 @@ async function sendData() {
 }
 
 function renderDB(rows) {
-  rows.forEach((email, index) => {
+  rows.forEach((row, index) => {
     let span = document.createElement('span');
     span.setAttribute('class', 'editSpan');
     span.innerHTML = `${index < 10 ? `0${index + 1}` : index + 1} : ${
-      email.email
-    }</br>`;
+      row.email
+    } / ${row.password}</br>`;
     dbData.appendChild(span);
     console.log(email.email, index);
   });
